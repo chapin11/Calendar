@@ -1,0 +1,131 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    transition-duration: 1s;
+    background-color: #ffdcf4;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "Varela Round"; 
+    src: url("./VarelaRound-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+  } 
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffdcf4;
+
+}
+
+.calendar {
+    height: 100%;
+    width: 100%;
+    background-color: #ffdcf4;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-calendar {
+    display: flex;
+	flex-wrap: wrap;
+	
+
+    margin: 50px;
+    width:90%;
+    height: 100%;
+    border-radius: 20px;
+    justify-self: center;
+    align-self: center;
+    transition-duration: 0.5s;
+}
+
+.title {
+    margin: 10px;
+    font-family: Varela Round;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.days {
+    height: 17%;
+    width: 150px;
+    background-color: #a297fa80;
+    border-radius: 10px;
+    font-size: 36px;
+    font-family: Varela Round;
+    font-weight: regular;
+    text-indent: 10px;
+    margin: 5px;
+    overflow-wrap: anywhere;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.days div {
+    font-size: 24px;
+}
+
+.notes {
+    height: 100%;
+    width: 40%;
+    background-color: #585da6;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    font-family: Varela Round;
+    font-size: 24px;
+
+    
+}
+
+.add-note {
+    margin: 10px;
+    font-size: 16px;
+    background-color: #202e52;
+    color: #ffdcf4;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.add-note1 {
+    margin: 10px;
+    font-size: 16px;
+    background-color: #202e52;
+    color: #ffdcf4;
+    border-radius: 5px;
+}
+.plus {
+    width: 25px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.title-notes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.today {
+    background-color: #a297fa80;
+    box-shadow: inset 0px 0px 100px crimson;
+}
+
+.selected-day {
+    box-shadow:inset 0px -10px 0px crimson;
+}
+.main-notes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-between;
+}
+.add-note {
+    flex: 1 2 1;
+}
